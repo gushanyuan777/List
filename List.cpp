@@ -36,6 +36,15 @@ int main()
         std::cout << x << "\t";  
     }  
     std::cout << std::endl;  
+
+        lst.remove(3);  
+  
+    std::cout << "List after removing 3: ";  
+    for (auto it = lst.begin(); it != lst.end(); ++it)  
+    {  
+        std::cout << *it << " ";  
+    }  
+    std::cout << std::endl;
   
     return 0;  
 }  

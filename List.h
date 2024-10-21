@@ -572,7 +572,22 @@ public:
             itr = erase( itr );
         return to;
     }
-
+    
+    void remove(const Object &x)  
+    {  
+        iterator itr = begin();  
+        while (itr != end())  
+        {  
+            if (*itr == x)  
+            {  
+                itr = erase(itr);  
+            }  
+            else  
+            {  
+                ++itr;  
+            }  
+        }  
+    } 
 private:
     int theSize;    /**<! 数据节点总数. */
     Node *head;     /**<! 头指针. */
